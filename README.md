@@ -14,7 +14,7 @@ Make sure to have Python: Version 3.8 or higher
 
 ### Libraries:
 Install the required Python libraries by running:
-pip install pandas numpy
+`pip install pandas numpy`
 
 ### Download the Dataset
 Visit the IMDB Non-Commercial Datasets page.
@@ -23,7 +23,7 @@ Place the downloaded file in the same directory as your python script.
 
 ### Run the Script
 Run the data.py script from the terminal using the following command:
-python <FILE_NAME>.py
+`python3 <FILE_NAME>.py`
 
 ### Expected Output
 The script in Pre-Processing performs the following tasks:
