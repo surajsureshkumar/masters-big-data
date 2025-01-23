@@ -7,7 +7,7 @@ The data.py script in Pre-Processing performs preprocessing tasks, such as clean
 ## Dataset
 All data files required for this assignment are available from the IMDB Non-Commercial Datasets https://developer.imdb.com/non-commercial-datasets/. 
 
-## How to Run the Assignment
+## How to Run the Assignment1
 
 ### Prerequisites
 Make sure to have Python: Version 3.8 or higher
