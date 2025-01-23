@@ -10,7 +10,7 @@ All data files required for this assignment are available from the IMDB Non-Comm
 How to Run the Assignment
 
 ## Prerequisites
-Make sure to have ython: Version 3.8 or higher
+Make sure to have Python: Version 3.8 or higher
 
 ## Libraries:
 Install the required Python libraries by running:
