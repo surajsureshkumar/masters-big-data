@@ -7,27 +7,25 @@ The data.py script in Pre-Processing performs preprocessing tasks, such as clean
 ## Dataset
 All data files required for this assignment are available from the IMDB Non-Commercial Datasets https://developer.imdb.com/non-commercial-datasets/. 
 
-How to Run the Assignment
+## How to Run the Assignment
 
-## Prerequisites
+### Prerequisites
 Make sure to have Python: Version 3.8 or higher
 
-## Libraries:
+### Libraries:
 Install the required Python libraries by running:
 pip install pandas numpy
 
-
-## Download the Dataset
+### Download the Dataset
 Visit the IMDB Non-Commercial Datasets page.
 Download all the required data files.
 Place the downloaded file in the same directory as your python script.
 
-
-## Run the Script
+### Run the Script
 Run the data.py script from the terminal using the following command:
 python <FILE_NAME>.py
 
-Expected Output
+### Expected Output
 The script in Pre-Processing performs the following tasks:
 Reads the title.ratings.tsv.gz file into a Pandas DataFrame.
 Cleans and transforms specific fields in the dataset (e.g., removing prefixes from IDs).
