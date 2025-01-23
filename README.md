@@ -45,7 +45,7 @@ The find_functional_dep.py in the Finding Functional Dependencies directory, ide
 - `title_producer()`: Extracts and processes producer information from the `title.principals.tsv.gz` file, saving the cleaned data in `title_producer.csv`.
 - `title_actor_character()`: Combines data from `title.principals.tsv.gz` and `characters.tsv` to create a detailed relationship between actors and characters, saving the result in `title_actor_character.csv`.
 
-### The Scripts in the Finding Functional Dependencies performs the following:
+### The Scripts in the Finding Functional Dependency performs the following:
 find_dependencies.py: The script will print the functional dependencies between columns in the dataset.
 main.py: The script will join and merge the datasets, resulting in new_relation.csv.
 remove_character.py: The script will clean the data by removing duplicate entries, and the result will be saved as find_dependencies.tsv
