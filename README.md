@@ -16,16 +16,16 @@ Make sure to have Python: Version 3.8 or higher
 Install the required Python libraries by running:
 `pip install pandas numpy`
 
-### Download the Dataset
+### <ins>Download the Dataset</ins>
 Visit the IMDB Non-Commercial Datasets page.
 Download all the required data files.
 Place the downloaded file in the same directory as your python script.
 
-### Run the Script
+### <ins>Run the Script</ins>
 Run the data.py script from the terminal using the following command:
 `python3 <FILE_NAME>.py`
 
-### Expected Output
+### <ins>Expected Output</ins>
 The script in Pre-Processing performs the following tasks:
 Reads the title.ratings.tsv.gz file into a Pandas DataFrame.
 Cleans and transforms specific fields in the dataset (e.g., removing prefixes from IDs).
