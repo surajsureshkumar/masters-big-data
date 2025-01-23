@@ -4,26 +4,26 @@ This repository contains the code and resources for my master's-level Big Data a
 Overview
 The data.py script in Pre-Processing performs preprocessing tasks, such as cleaning and transforming data fields, to prepare the data for further analysis.
 
-##Dataset
+## Dataset
 All data files required for this assignment are available from the IMDB Non-Commercial Datasets https://developer.imdb.com/non-commercial-datasets/. 
 
 How to Run the Assignment
 
-##Prerequisites
+## Prerequisites
 Make sure to have ython: Version 3.8 or higher
 
-##Libraries:
+## Libraries:
 Install the required Python libraries by running:
 pip install pandas numpy
 
 
-##Download the Dataset
+## Download the Dataset
 Visit the IMDB Non-Commercial Datasets page.
 Download all the required data files.
 Place the downloaded file in the same directory as your python script.
 
 
-##Run the Script
+## Run the Script
 Run the data.py script from the terminal using the following command:
 python <FILE_NAME>.py
 
