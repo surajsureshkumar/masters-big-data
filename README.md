@@ -50,3 +50,4 @@ find_dependencies.py: The script will print the functional dependencies between 
 main.py: The script will join and merge the datasets, resulting in new_relation.csv.
 remove_character.py: The script will clean the data by removing duplicate entries, and the result will be saved as find_dependencies.tsv
 
+### <ins>The script file in the Views directory can be run on datagrip or any other IDEs that you prefer</ins>
