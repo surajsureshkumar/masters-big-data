@@ -1,0 +1,185 @@
+//Query 1
+db.Members.aggregate([
+{
+    $match :{
+        primaryName:{ $regex:/^Phi/},
+        deathYear : null
+    }
+}, 
+{
+    $lookup : {
+        from : 'Movies',
+        localField : 'nconst',
+        foreignField : 'actor.id',
+        as : 'Person'
+    }
+},
+{
+    $match :{
+        "Person.startYear" : {$ne : 2014.0}
+    }
+},
+{
+    $project:{
+        "primaryName":1
+    }
+}
+])
+
+
+//Query2
+db.Movies.aggregate([
+{
+    $match:{
+        "startYear": { $lte : 2017.0 },
+    }
+},
+{
+    $unwind :{
+        "path" : "$genre"
+    }
+},
+{
+    $match : {
+        "genre" : "'Talk-Show'",  
+
+    }
+},
+{
+    $unwind : {
+        path : "$producer"
+    }
+},
+{
+    $lookup:{
+        from : "Members",
+        localField : "producer",
+        foreignField: "nconst",
+        as : "Shows"
+    }
+},
+{
+    $match : {producer : {$ne : null}}
+},
+{
+    $match : {
+        "Shows.primaryName" : {$regex :"Gill"}
+    }
+},
+{
+    $group :{
+        _id : "Shows.primaryName",
+        count_movies : {$count:{}}
+    }
+},
+  {
+    $project: {
+      "Shows.primaryName":1,
+       count_movies : 1
+    }
+  }
+])
+
+
+//Query3
+db.Movies.aggregate([
+{
+    $unwind:{
+        "path" : "$writers"
+    }
+},
+{
+    $lookup : {
+        from : "Members",
+        localField : "nconst",
+        foreignField : "writer",
+        as : "HighestWriters"
+    }
+},
+{
+    $match : {
+        "HighestWriters.primaryName" : {$regex : "/Bhardwaj/"},
+        "HighestWriters.deathYear" : {$ne : null}
+    }
+},
+{
+    $group : {
+        _id : {nconst:$nconst},
+        avgRuntime : {$avg: "$runtime"}
+    }
+}
+])
+
+//Query4
+db.Movies.aggregate([
+{
+    $unwind:"$producer"
+},
+{
+    $lookup : {
+        from : "Members",
+        localField : "nconst",
+        foreignField : "producer",
+        as : "Producers"
+    }
+},
+{
+  $match:{
+      runtime : {$gte : 120}
+  }  
+},
+
+{
+    $match : {
+        "Producers.deathYear" : null,   
+    }
+},
+{
+    $group: {
+      _id: "Producers.primaryName",
+      count: {$sum:1}
+    }
+  },
+])
+
+
+//Query5
+db.Movies.aggregate([
+{
+    $unwind:{
+        "path":"$genre"
+    }
+},
+{
+    $match:{
+        genre:"'Sci-Fi'"
+    }
+},
+{
+    $lookup : {
+        from : "Members",
+        localField : "director",
+        foreignField : "nconst",
+        as : "Directors"
+    }
+},
+{
+    $lookup : {
+        from : "Members",
+        localField : "nconst",
+        foreignField : "actor.id",
+        as : "actor"
+    }
+},
+{
+    $match : {
+        "Directors.primaryName" : 'James Cameron',
+        "actor.primaryName":'Sigourney Weaver',
+    }
+},
+  {
+    $project: {
+      "Directors.primaryName":1,
+    }
+  }
+])
