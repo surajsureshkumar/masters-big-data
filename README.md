@@ -9,23 +9,23 @@ All data files required for this assignment are available from the IMDB Non-Comm
 
 ## How to Run the Assignment1
 
-### Prerequisites
+### <ins>Prerequisites</ins>
 Make sure to have Python: Version 3.8 or higher
 
-### Libraries:
+### <ins>Libraries</ins>
 Install the required Python libraries by running:
 `pip install pandas numpy`
 
-### Download the Dataset
+### <ins>Download the Dataset</ins>
 Visit the IMDB Non-Commercial Datasets page.
 Download all the required data files.
 Place the downloaded file in the same directory as your python script.
 
-### Run the Script
+### <ins>Run the Script</ins>
 Run the data.py script from the terminal using the following command:
 `python3 <FILE_NAME>.py`
 
-### Expected Output
+### <ins>Expected Output</ins>
 The script in Pre-Processing performs the following tasks:
 Reads the title.ratings.tsv.gz file into a Pandas DataFrame.
 Cleans and transforms specific fields in the dataset (e.g., removing prefixes from IDs).
@@ -33,7 +33,7 @@ Prepares the data for further analysis.
 
 The find_functional_dep.py in the Finding Functional Dependencies directory, identifies functional dependencies between attributes within the dataset. It analyzes the dataset to find column combinations that can uniquely identify other columns, helping to understand the relationships within the data.
 
-### The script in Pre-Processing performs the following tasks:
+### <ins>The script in Pre-Processing performs the following tasks:</ins>
 
 - `title()`: Merges the `title.basics.tsv.gz` and `title.ratings.tsv.gz` files to prepare a combined dataset with movie information and ratings, saving the result as `title.csv`.
 - `genre()`: Extracts and counts the unique genres from the `title.basics.tsv.gz` file, and saves the result as `genres.csv`.
@@ -45,7 +45,7 @@ The find_functional_dep.py in the Finding Functional Dependencies directory, ide
 - `title_producer()`: Extracts and processes producer information from the `title.principals.tsv.gz` file, saving the cleaned data in `title_producer.csv`.
 - `title_actor_character()`: Combines data from `title.principals.tsv.gz` and `characters.tsv` to create a detailed relationship between actors and characters, saving the result in `title_actor_character.csv`.
 
-### The Scripts in the Finding Functional Dependencies performs the following:
+### <ins>The Scripts in the Finding Functional Dependency performs the following:</ins>
 find_dependencies.py: The script will print the functional dependencies between columns in the dataset.
 main.py: The script will join and merge the datasets, resulting in new_relation.csv.
 remove_character.py: The script will clean the data by removing duplicate entries, and the result will be saved as find_dependencies.tsv
