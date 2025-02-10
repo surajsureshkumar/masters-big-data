@@ -1,5 +1,5 @@
 # masters-big-data
-This repository contains the code and resources for my master's-level Big Data assignment. The project explores concepts of distributed data processing, scalability, and data analytics
+This repository contains the code and resources for my master's-level Big Data assignment. The project explores concepts of distributed data processing, scalability, and data analytics.
 
 Overview
 The data.py script in Pre-Processing performs preprocessing tasks, such as cleaning and transforming data fields, to prepare the data for further analysis.
@@ -8,7 +8,7 @@ The data.py script in Pre-Processing performs preprocessing tasks, such as clean
 All data files required for this assignment are available from the IMDB Non-Commercial Datasets https://developer.imdb.com/non-commercial-datasets/. 
 
 ### <ins>Prerequisites</ins>
-Make sure to have Python: Version 3.8 or higher
+Make sure to have Python: Version 3.8 or higher.
 
 ### <ins>Libraries</ins>
 Install the required Python libraries by running:
