@@ -1,5 +1,5 @@
 # masters-big-data
-This repository contains the code and resources for my master's-level Big Data assignment. The project explores concepts of distributed data processing, scalability, and data analytics.
+This repository contains the code and resources for my master's-level Big Data assignment. The project explores concepts of distributed data processing, scalability, and data analytics. Code has been commented so that you can understand it better
 
 # Overview
 The data.py script in Pre-Processing performs preprocessing tasks, such as cleaning and transforming data fields, to prepare the data for further analysis.
