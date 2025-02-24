@@ -1,3 +1,4 @@
+// queries
 CREATE TABLE Popular_Movie_Actors AS
 SELECT ta.*
 FROM hw_schema."Title_Actor" ta
