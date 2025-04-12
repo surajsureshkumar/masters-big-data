@@ -51,4 +51,4 @@ remove_character.py: The script will clean the data by removing duplicate entrie
 ### <ins>The script file in the Views directory can be run on datagrip or any other IDEs that you prefer</ins>
 
 
-**All contributions to this repository must be original and authored by you and contribution or modifications are welcome. Copying content or code from external sources without appropriate attribution or permission is strictly prohibited, as it may result in plagiarism and violate the repository's guidelines**
+***Please do not copy the code files for your assignment, rather run it locally and understand how it works. Copying content for your assignment or homework is strictly prohibited, as it may result in plagiarism.***
