@@ -49,3 +49,6 @@ main.py: The script will join and merge the datasets, resulting in new_relation.
 remove_character.py: The script will clean the data by removing duplicate entries, and the result will be saved as find_dependencies.tsv
 
 ### <ins>The script file in the Views directory can be run on datagrip or any other IDEs that you prefer</ins>
+
+
+**All contributions must be original work. Copying content or code from external sources without proper attribution or permission is strictly prohibited and may lead to plagiarism concerns**
